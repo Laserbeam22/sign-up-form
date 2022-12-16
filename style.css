@@ -7,4 +7,8 @@
 .background-image {
     width: auto;
     height: 100vh;
- }
+}
+
+.odin-header {
+    background-color:rgba(0, 0, 0, 0.5);
+}
