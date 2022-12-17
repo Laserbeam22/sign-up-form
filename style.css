@@ -40,5 +40,7 @@ h1 {
 }
 
 .photo-cred {
+    display: flex;
+    justify-content: center;
     color: white;
 }
