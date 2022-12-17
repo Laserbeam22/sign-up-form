@@ -38,3 +38,7 @@ h1 {
     align-self: center;
     font-size: clamp(.5em, 10vh, 8rem);
 }
+
+.photo-cred {
+    color: white;
+}
