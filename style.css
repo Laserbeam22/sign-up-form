@@ -9,6 +9,10 @@
     src: url(../Norse-Bold.otf);
 }
 
+.left-side{
+    width: fit-content;
+}
+
 .background-image {
     width: auto;
     height: 100vh;
