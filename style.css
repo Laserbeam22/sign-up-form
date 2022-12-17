@@ -36,6 +36,7 @@ h1 {
     font-family: norse;
     color: white;
     align-self: center;
+    margin-top: 3%;
     font-size: clamp(.5em, 10vh, 8rem);
 }
 
