@@ -42,5 +42,6 @@ h1 {
 .photo-cred {
     display: flex;
     justify-content: center;
+    margin-top: 36.5rem;
     color: white;
 }
