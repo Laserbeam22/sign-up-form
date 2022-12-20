@@ -4,12 +4,16 @@
     padding: 0%;
 }
 
+body {
+    display: flex;
+}
+
 @font-face {
     font-family: norse;
     src: url(../Norse-Bold.otf);
 }
 
-.left-side{
+.left-side {
     width: fit-content;
 }
 
