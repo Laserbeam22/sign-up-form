@@ -29,7 +29,7 @@ body {
     flex-direction: row;
     justify-content: center;
     position: relative;
-    margin-top: -83vh;
+    margin-top: -75vh;
     background-color:rgba(0, 0, 0, 0.5);
     padding: 2%;
 }
@@ -49,7 +49,7 @@ h1 {
 .photo-cred {
     display: flex;
     justify-content: center;
-    margin-top: 36.5rem;
+    margin-top: 30rem;
     color: white;
 }
 
