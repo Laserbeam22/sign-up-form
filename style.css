@@ -50,7 +50,8 @@ h1 {
 .photo-cred {
     display: flex;
     justify-content: center;
-    margin-top: 30rem;
+    font-size: clamp(12px, 1.5ch, 16px);
+    margin-top: 53vh;
     color: white;
 }
 
