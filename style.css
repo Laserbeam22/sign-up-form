@@ -71,4 +71,5 @@ a:link, a:visited {
 
 fieldset {
     background-color: white;
+    border: none;
 }
