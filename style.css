@@ -91,6 +91,12 @@ label, input {
     flex-direction: column;
 }
 
+label {
+    font-size: 1.4vh;
+    letter-spacing: .06vw;
+    font-weight: 500;
+}
+
 input {
     width: 20vw;
     height: 2rem;
