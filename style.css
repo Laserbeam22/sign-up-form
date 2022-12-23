@@ -77,6 +77,7 @@ fieldset {
     "h2 h2";
     padding-left: 3vw;
     padding-bottom: 2vh;
+    box-shadow: rgba(121, 121, 121, 0.45) 0px 15px 15px -15px;
 }
 
 h2 {
