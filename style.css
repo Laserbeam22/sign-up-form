@@ -72,10 +72,14 @@ a:link, a:visited {
 fieldset {
     background-color: white;
     border: none;
+    display: grid;
+    grid-template-areas: 
+    "h2 h2";
 }
 
 h2 {
     font-size: 2.7vh;
     font-weight: 500;
     padding: 2vh 0 2.8vh 0;
+    grid-area: h2;
 }
