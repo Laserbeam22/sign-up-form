@@ -75,6 +75,8 @@ fieldset {
     display: grid;
     grid-template-areas: 
     "h2 h2";
+    padding-left: 3vw;
+    padding-bottom: 2vh;
 }
 
 h2 {
