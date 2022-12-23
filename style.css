@@ -106,3 +106,7 @@ input {
     border-radius: 5px;
     border: solid 1px #E5E7EB;
 }
+
+.last-name, .phone, .confirm-pswrd {
+    margin-left: -13vw;
+}
