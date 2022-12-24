@@ -111,3 +111,15 @@ input {
 .last-name, .phone, .confirm-pswrd {
     margin-left: -13vw;
 }
+
+button {
+    padding: .9rem 3.5rem;
+    margin-left: 3vw;
+    margin-top: 3%;
+    border: none;
+    border-radius: 7px;
+    font-size: larger;
+    font-weight: 550;
+    background-color: #4e8692;
+    color: white;
+}
