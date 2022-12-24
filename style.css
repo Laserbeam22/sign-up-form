@@ -123,3 +123,9 @@ button {
     background-color: #4e8692;
     color: white;
 }
+
+.bottom {
+    margin-left: 3vw;
+    margin-top: 3%;
+    font-size: 1.1rem;
+}
