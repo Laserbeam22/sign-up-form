@@ -98,6 +98,11 @@ label {
     font-weight: 500;
 }
 
+.optional {
+    margin-left: .3vw;
+    font-size: 1.3vh;
+}
+
 input {
     width: 20vw;
     height: 2rem;
