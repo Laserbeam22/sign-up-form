@@ -139,7 +139,7 @@ button {
     color: #4e8692;
 }
 
-input:invalid {
+input:not(:placeholder-shown):not(:focus):invalid {
     border-color: red;
 }
 
