@@ -24,4 +24,13 @@ userInput.onkeyup = function() {
         lower.classList.remove('valid');
         lower.classList.add('invalid');
     }
+
+    var numbers = /[0-9]/g;
+    if(userInput.value.match(numbers)) {
+        number.classList.remove('invalid');
+        number.classList.add('valid');
+    } else {
+        number.classList.remove('valid');
+        number.classList.add('invalid');
+    }
 }
