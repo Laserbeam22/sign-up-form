@@ -15,4 +15,13 @@ userInput.onkeyup = function() {
         upper.classList.remove('valid');
         upper.classList.add('invalid');
     }
+
+    var lowerCaseLetter = /[a-z]/g;
+    if(userInput.value.match(lowerCaseLetter)) {
+        lower.classList.remove('invalid');
+        lower.classList.add('valid');
+    } else {
+        lower.classList.remove('valid');
+        lower.classList.add('invalid');
+    }
 }
