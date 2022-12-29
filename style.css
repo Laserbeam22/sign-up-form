@@ -178,3 +178,9 @@ input:not(:placeholder-shown):not(:focus):invalid {
     right: -230px;
     content: "✔";
 }
+
+.invalid:before {
+    position: relative;
+    right: -230px;
+    content: "✖";
+}
