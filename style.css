@@ -166,3 +166,5 @@ input:not(:placeholder-shown):not(:focus):invalid {
     background: url('./warning-sign-in-triangle-svgrepo-com.svg') no-repeat 98% 50% rgb(252 176 176 / 32%);
     background-size: 20px;
 }
+
+/* PASSWORD CRITERIA STYLING */
