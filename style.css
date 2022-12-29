@@ -149,3 +149,15 @@ input:focus {
     border: solid 1px rgb(89 148 160);
     background-color: rgb(115 188 204 / 15%);
 }
+
+input:not(:placeholder-shown):optional:valid {
+    border-color: #66d16e;
+    background: url('./check-mark-svgrepo-com.svg') no-repeat 98% 50% #bceebf82;
+    background-size: 20px;
+}
+  
+input:required:valid {
+    border-color: #66d16e;
+    background: url('./check-mark-svgrepo-com.svg') no-repeat 98% 50% #bceebf82;
+    background-size: 20px;
+}
