@@ -168,3 +168,7 @@ input:not(:placeholder-shown):not(:focus):invalid {
 }
 
 /* PASSWORD CRITERIA STYLING */
+
+.valid {
+    color: green;
+}
