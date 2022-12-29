@@ -172,3 +172,9 @@ input:not(:placeholder-shown):not(:focus):invalid {
 .valid {
     color: green;
 }
+
+.valid:before {
+    position: relative;
+    right: -230px;
+    content: "✔";
+}
