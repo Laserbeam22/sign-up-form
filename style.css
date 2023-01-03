@@ -185,6 +185,8 @@ input:not(:placeholder-shown):not(:focus):invalid {
     content: "✖";
 }
 
+/* PASSWORD CONFIRMATION STYLING */
+
 .pswrdInvalid {
     visibility: hidden;
 }
