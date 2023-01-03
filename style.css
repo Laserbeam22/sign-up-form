@@ -184,3 +184,12 @@ input:not(:placeholder-shown):not(:focus):invalid {
     right: -230px;
     content: "✖";
 }
+
+.pswrdInvalid {
+    visibility: hidden;
+}
+
+.pswrdValid {
+    visibility: visible;
+    color: #66d16e;
+}
