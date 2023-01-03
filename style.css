@@ -192,3 +192,9 @@ input:not(:placeholder-shown,:focus):invalid {
     visibility: visible;
     color: #66d16e;
 }
+
+.confirmValid:focus, .confirmValid {
+    border-color: #66d16e;
+    background: url('./check-mark-svgrepo-com.svg') no-repeat 98% 50% #bceebf82;
+    background-size: 20px;
+}
