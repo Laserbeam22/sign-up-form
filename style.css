@@ -190,7 +190,7 @@ input:not(:placeholder-shown,:focus):invalid {
 
 .pswrdValid {
     visibility: visible;
-    color: #66d16e;
+    color: green;
 }
 
 .confirmValid:focus, .confirmValid {
