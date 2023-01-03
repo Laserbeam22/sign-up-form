@@ -46,13 +46,14 @@ userInput.onkeyup = function() {
 
 confirmUserInput.onkeyup = function() {
     const pswrdConfirm = document.getElementById('pswrdMatch');
+    if (userInput.value.match("^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$")) {
+        if (confirmUserInput.value.match(userInput.value)) {
+            pswrdConfirm.classList.remove('pswrdInvalid');
+            pswrdConfirm.classList.add('pswrdValid');
 
-    if (confirmUserInput.value.match(userInput.value)) {
-        pswrdConfirm.classList.remove('pswrdInvalid');
-        pswrdConfirm.classList.add('pswrdValid');
-
-    } else {
-        pswrdConfirm.classList.remove('pswrdValid');
-        pswrdConfirm.classList.add('pswrdInvalid');
+        } else {
+            pswrdConfirm.classList.remove('pswrdValid');
+            pswrdConfirm.classList.add('pswrdInvalid');
+        }
     }
 }
