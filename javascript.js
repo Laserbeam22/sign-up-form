@@ -3,6 +3,7 @@ const upper = document.getElementById('rule-1');
 const lower = document.getElementById('rule-2');
 const number = document.getElementById('rule-3');
 const length = document.getElementById('rule-4');
+const confirmUserInput = document.getElementById('confirm-pswrd');
 
 
 userInput.onkeyup = function() {
@@ -40,5 +41,18 @@ userInput.onkeyup = function() {
     } else {
         length.classList.remove('valid');
         length.classList.add('invalid');
+    }
+}
+
+confirmUserInput.onkeyup = function() {
+    const pswrdConfirm = document.getElementById('pswrdMatch');
+
+    if (confirmUserInput.value.match(userInput.value)) {
+        pswrdConfirm.classList.remove('pswrdInvalid');
+        pswrdConfirm.classList.add('pswrdValid');
+
+    } else {
+        pswrdConfirm.classList.remove('pswrdValid');
+        pswrdConfirm.classList.add('pswrdInvalid');
     }
 }
