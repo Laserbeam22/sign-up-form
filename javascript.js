@@ -50,10 +50,13 @@ confirmUserInput.onkeyup = function() {
         if (confirmUserInput.value.match(userInput.value)) {
             pswrdConfirm.classList.remove('pswrdInvalid');
             pswrdConfirm.classList.add('pswrdValid');
-
+            confirmUserInput.classList.remove('confirmInvalid');
+            confirmUserInput.classList.add('confirmValid');
         } else {
             pswrdConfirm.classList.remove('pswrdValid');
             pswrdConfirm.classList.add('pswrdInvalid');
+            confirmUserInput.classList.remove('confirmValid');
+            confirmUserInput.classList.add('confirmInvalid');
         }
     }
 }
