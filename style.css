@@ -152,7 +152,7 @@ input:not(:placeholder-shown):optional:valid {
     background-size: 20px;
 }
   
-input:required:valid {
+input:required:not(#confirm-pswrd):valid {
     border-color: #66d16e;
     background: url('./check-mark-svgrepo-com.svg') no-repeat 98% 50% #bceebf82;
     background-size: 20px;
