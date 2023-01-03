@@ -139,10 +139,6 @@ button {
     color: #4e8692;
 }
 
-input:not(:placeholder-shown):not(:focus):invalid {
-    border-color: red;
-}
-
 input:focus {
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     outline: none;
@@ -165,6 +161,7 @@ input:required:valid {
 input:not(:placeholder-shown,:focus):invalid {
     background: url('./warning-sign-in-triangle-svgrepo-com.svg') no-repeat 98% 50% rgb(252 176 176 / 32%);
     background-size: 20px;
+    border-color: red;
 }
 
 /* PASSWORD CRITERIA STYLING */
