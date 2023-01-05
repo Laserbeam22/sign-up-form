@@ -65,3 +65,18 @@ confirmUserInput.onkeyup = function() {
         }
     }
 }
+
+createBtn.onclick = function() {
+    
+    if (confirmUserInput.value != userInput.value) {
+        noMatch.classList.remove('no-error');
+        noMatch.classList.add('error');
+        pswrdConfirm.classList.remove('pswrdValid');
+        pswrdConfirm.classList.add('pswrdInvalid');
+        confirmUserInput.classList.remove('confirmValid');
+        confirmUserInput.classList.add('confirmInvalid');
+    } else {
+        noMatch.classList.remove('error');
+        noMatch.classList.add('no-error');
+    }
+}
