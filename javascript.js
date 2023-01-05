@@ -5,6 +5,7 @@ const number = document.getElementById('rule-3');
 const length = document.getElementById('rule-4');
 const confirmUserInput = document.getElementById('confirm-pswrd');
 const pswrdConfirm = document.getElementById('pswrdMatch');
+const noMatch = document.getElementById('noMatch');
 
 
 userInput.onkeyup = function() {
