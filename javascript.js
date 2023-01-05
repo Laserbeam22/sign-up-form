@@ -6,6 +6,7 @@ const length = document.getElementById('rule-4');
 const confirmUserInput = document.getElementById('confirm-pswrd');
 const pswrdConfirm = document.getElementById('pswrdMatch');
 const noMatch = document.getElementById('noMatch');
+const createBtn = document.getElementById('create');
 
 
 userInput.onkeyup = function() {
