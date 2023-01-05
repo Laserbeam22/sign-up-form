@@ -198,3 +198,14 @@ input:not(:placeholder-shown,:focus):invalid {
     background: url('./check-mark-svgrepo-com.svg') no-repeat 98% 50% #bceebf82;
     background-size: 20px;
 }
+
+/* PASSWORD-MATCH ERROR ALERT STYLING */
+
+.no-error {
+    visibility: hidden;
+}
+
+.error {
+    visibility: visible;
+    color: red;
+}
