@@ -4,6 +4,7 @@ const lower = document.getElementById('rule-2');
 const number = document.getElementById('rule-3');
 const length = document.getElementById('rule-4');
 const confirmUserInput = document.getElementById('confirm-pswrd');
+const pswrdConfirm = document.getElementById('pswrdMatch');
 
 
 userInput.onkeyup = function() {
@@ -45,7 +46,7 @@ userInput.onkeyup = function() {
 }
 
 confirmUserInput.onkeyup = function() {
-    const pswrdConfirm = document.getElementById('pswrdMatch');
+ 
     if (userInput.value.match("^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$")) {
         if (confirmUserInput.value.match(userInput.value)) {
             pswrdConfirm.classList.remove('pswrdInvalid');
