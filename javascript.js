@@ -48,7 +48,12 @@ userInput.onkeyup = function() {
         length.classList.add('invalid');
     }
 
-    if(userInput.value != confirmUserInput.value) {
+    if(userInput.validity.patternMismatch | !userInput.value) {
+        pswrdConfirm.classList.remove('pswrdValid');
+        pswrdConfirm.classList.add('pswrdInvalid');
+        confirmUserInput.classList.remove('confirmValid');
+        confirmUserInput.classList.add('confirmInvalid');
+    } else if(userInput.value != confirmUserInput.value) {
         pswrdConfirm.classList.remove('pswrdValid');
         pswrdConfirm.classList.add('pswrdInvalid');
         confirmUserInput.classList.remove('confirmValid');
@@ -64,22 +69,31 @@ userInput.onkeyup = function() {
 }
 
 confirmUserInput.onkeyup = function() {
- 
-    if (userInput.value.match("^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$")) {
-        if (confirmUserInput.value.match(userInput.value)) {
+    
+    if(userInput.value.length == confirmUserInput.value.length) {
+        if(userInput.value.length == confirmUserInput.value.length) {
             pswrdConfirm.classList.remove('pswrdInvalid');
             pswrdConfirm.classList.add('pswrdValid');
             confirmUserInput.classList.remove('confirmInvalid');
             confirmUserInput.classList.add('confirmValid');
             noMatch.classList.remove('error');
             noMatch.classList.add('no-error');
-        } else {
+        }
+    } else {
             pswrdConfirm.classList.remove('pswrdValid');
             pswrdConfirm.classList.add('pswrdInvalid');
             confirmUserInput.classList.remove('confirmValid');
             confirmUserInput.classList.add('confirmInvalid');
-        }
+    
     }
+
+    if(userInput.validity.patternMismatch) {
+        pswrdConfirm.classList.remove('pswrdValid');
+        pswrdConfirm.classList.add('pswrdInvalid');
+        confirmUserInput.classList.remove('confirmValid');
+        confirmUserInput.classList.add('confirmInvalid');
+    }
+    
 }
 
 createBtn.onclick = function() {
