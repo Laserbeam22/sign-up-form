@@ -28,6 +28,16 @@ let validClass = function() {
     noMatch.classList.add('no-error');
 }
 
+let checkPswrdValidity = function() {
+    if(userInput.value.patternMismatch | userInput.value.length < 8) {
+        userInput.classList.remove('validated');
+        userInput.classList.add('invalidated');
+    } else {
+        userInput.classList.remove('invalidated');
+        userInput.classList.add('validated');
+    }
+}
+
 
 userInput.onkeyup = function() {
 
