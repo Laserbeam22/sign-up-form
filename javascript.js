@@ -112,6 +112,7 @@ createBtn.onclick = function() {
         noMatch.classList.remove('no-error');
         noMatch.classList.add('error');
         invalidClass();
+        return false;
     } else {
         noMatch.classList.remove('error');
         noMatch.classList.add('no-error');
