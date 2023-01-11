@@ -79,22 +79,11 @@ userInput.onkeyup = function() {
     }
 
     if(userInput.validity.patternMismatch | !userInput.value) {
-        pswrdConfirm.classList.remove('pswrdValid');
-        pswrdConfirm.classList.add('pswrdInvalid');
-        confirmUserInput.classList.remove('confirmValid');
-        confirmUserInput.classList.add('confirmInvalid');
+        invalidClass();
     } else if(userInput.value != confirmUserInput.value) {
-        pswrdConfirm.classList.remove('pswrdValid');
-        pswrdConfirm.classList.add('pswrdInvalid');
-        confirmUserInput.classList.remove('confirmValid');
-        confirmUserInput.classList.add('confirmInvalid');
+        invalidClass();
     } else {
-        pswrdConfirm.classList.remove('pswrdInvalid');
-        pswrdConfirm.classList.add('pswrdValid');
-        confirmUserInput.classList.remove('confirmInvalid');
-        confirmUserInput.classList.add('confirmValid');
-        noMatch.classList.remove('error');
-        noMatch.classList.add('no-error');
+        validClass();
     }
 }
 
