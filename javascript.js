@@ -41,6 +41,8 @@ let checkPswrdValidity = function() {
 
 userInput.onkeyup = function() {
 
+    checkPswrdValidity();
+
     var upperCaseLetters = /[A-Z]/g;
     if(userInput.value.match(upperCaseLetters)) {
         upper.classList.remove('invalid');
@@ -97,6 +99,8 @@ userInput.onkeyup = function() {
 }
 
 confirmUserInput.onkeyup = function() {
+
+    checkPswrdValidity();
     
     if(userInput.value.length == confirmUserInput.value.length) {
         if(userInput.value.length == confirmUserInput.value.length) {
