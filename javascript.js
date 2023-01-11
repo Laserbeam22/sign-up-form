@@ -19,6 +19,15 @@ let invalidClass = function() {
     confirmUserInput.classList.add('confirmInvalid');
 }
 
+let validClass = function() {
+    pswrdConfirm.classList.remove('pswrdInvalid');
+    pswrdConfirm.classList.add('pswrdValid');
+    confirmUserInput.classList.remove('confirmInvalid');
+    confirmUserInput.classList.add('confirmValid');
+    noMatch.classList.remove('error');
+    noMatch.classList.add('no-error');
+}
+
 
 userInput.onkeyup = function() {
 
