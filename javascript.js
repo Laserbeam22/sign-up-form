@@ -11,6 +11,15 @@ const noMatch = document.getElementById('noMatch');
 const createBtn = document.getElementById('create');
 
 
+
+let invalidClass = function() {
+    pswrdConfirm.classList.remove('pswrdValid');
+    pswrdConfirm.classList.add('pswrdInvalid');
+    confirmUserInput.classList.remove('confirmValid');
+    confirmUserInput.classList.add('confirmInvalid');
+}
+
+
 userInput.onkeyup = function() {
 
     var upperCaseLetters = /[A-Z]/g;
