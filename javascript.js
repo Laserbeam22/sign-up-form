@@ -48,6 +48,11 @@ userInput.onkeyup = function() {
         name.classList.add('valid');
     }
 
+    let addInvalidClass = function(name) {
+        name.classList.remove('valid');
+        name.classList.add('invalid');
+    }
+
     var upperCaseLetters = /[A-Z]/g;
     if(userInput.value.match(upperCaseLetters)) {
         upper.classList.remove('invalid');
