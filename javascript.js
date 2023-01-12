@@ -43,6 +43,11 @@ userInput.onkeyup = function() {
 
     checkPswrdValidity();
 
+    let addValidClass = function(name) {
+        name.classList.remove('invalid');
+        name.classList.add('valid');
+    }
+
     var upperCaseLetters = /[A-Z]/g;
     if(userInput.value.match(upperCaseLetters)) {
         upper.classList.remove('invalid');
