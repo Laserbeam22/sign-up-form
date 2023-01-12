@@ -47,7 +47,7 @@ userInput.onkeyup = function() {
         name.classList.remove('invalid');
         name.classList.add('valid');
     }
-
+    
     let addInvalidClass = function(name) {
         name.classList.remove('valid');
         name.classList.add('invalid');
@@ -55,37 +55,29 @@ userInput.onkeyup = function() {
 
     var upperCaseLetters = /[A-Z]/g;
     if(userInput.value.match(upperCaseLetters)) {
-        upper.classList.remove('invalid');
-        upper.classList.add('valid');
+        addValidClass(upper);
     } else {
-        upper.classList.remove('valid');
-        upper.classList.add('invalid');
+        addInvalidClass(upper);
     }
 
     var lowerCaseLetter = /[a-z]/g;
     if(userInput.value.match(lowerCaseLetter)) {
-        lower.classList.remove('invalid');
-        lower.classList.add('valid');
+        addValidClass(lower);
     } else {
-        lower.classList.remove('valid');
-        lower.classList.add('invalid');
+        addInvalidClass(lower);
     }
 
     var numbers = /[0-9]/g;
     if(userInput.value.match(numbers)) {
-        number.classList.remove('invalid');
-        number.classList.add('valid');
+       addValidClass(number);
     } else {
-        number.classList.remove('valid');
-        number.classList.add('invalid');
+        addInvalidClass(number);
     }
 
     if(userInput.value.length >= 8) {
-        length.classList.remove('invalid');
-        length.classList.add('valid');
+       addValidClass(length);
     } else {
-        length.classList.remove('valid');
-        length.classList.add('invalid');
+        addInvalidClass(length);
     }
 
     if(userInput.validity.patternMismatch | !userInput.value) {
