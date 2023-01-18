@@ -113,6 +113,10 @@ input {
     border: solid 1px #E5E7EB;
 }
 
+::placeholder {
+    font-size: clamp(.5em, 1.7vh, 8rem);
+}
+
 .last-name, .phone, .confirm-pswrd {
     margin-left: -13vw;
 }
