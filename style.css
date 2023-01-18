@@ -140,7 +140,7 @@ button:hover {
 .bottom {
     margin-left: 3vw;
     margin-top: 3%;
-    font-size: 1.1rem;
+    font-size: clamp(.5em, 2vh, 8rem);
 }
 
 .log {
