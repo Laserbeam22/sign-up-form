@@ -51,9 +51,9 @@ h1 {
 .photo-cred {
     display: flex;
     justify-content: center;
-    font-size: clamp(12px, 1.5ch, 16px);
-    margin-top: 53vh;
+    font-size: clamp(.5em, 1.5vh, 8rem);
     color: white;
+    margin-top: 80%;
 }
 
 a:link, a:visited {
