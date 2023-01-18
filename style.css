@@ -64,7 +64,7 @@ a:link, a:visited {
 
 .top {
     padding: 17vh 15vw 7vh 3vw;
-    font-size: clamp(1.5rem, 1.6vw, 3rem);
+    font-size: clamp(.5em, 1.7vw, 8rem);
     width: clamp(200px, 100vw, 100%);
     text-align: left;
 }
