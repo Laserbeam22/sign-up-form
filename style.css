@@ -183,8 +183,8 @@ input:not(:placeholder-shown,:focus):invalid {
 }
 
 .valid:before {
-    position: relative;
-    right: -230px;
+    position: absolute;
+    left: 15em;
     content: "✔";
 }
 
