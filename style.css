@@ -189,8 +189,8 @@ input:not(:placeholder-shown,:focus):invalid {
 }
 
 .invalid:before {
-    position: relative;
-    right: -230px;
+    position: absolute;
+    left: 15em;
     content: "✖";
 }
 
