@@ -105,8 +105,7 @@ label {
 
 input {
     width: 20vw;
-    height: 1.8vw;
-    padding: .6vw;
+    padding: .7vh 1vh;
     margin: .3vh 0 2.5vh 0;
     font-size: clamp(.5em, 1.7vh, 8rem);
     border-radius: 5px;
