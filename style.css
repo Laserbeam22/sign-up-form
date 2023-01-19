@@ -122,6 +122,7 @@ input {
 
 .pswrd-criteria {
     font-size: clamp(.5em, 1.7vh, 8rem);
+    position: relative;
 }
 
 button {
