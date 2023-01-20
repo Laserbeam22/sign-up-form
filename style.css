@@ -121,7 +121,7 @@ input {
 }
 
 .pswrd-criteria {
-    font-size: clamp(.5em, 1.7vh, 8rem);
+    font-size: clamp(5.3px, 1.7vh, 8rem);
     position: relative;
 }
 
@@ -203,6 +203,7 @@ input:not(:placeholder-shown,:focus):invalid {
 .pswrdValid {
     visibility: visible;
     color: green;
+    font-size: clamp(5.3px, 1.7vh, 8rem);
 }
 
 .confirmValid:focus, .confirmValid {
