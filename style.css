@@ -121,6 +121,10 @@ input {
     margin-left: -13vw;
 }
 
+#password, #confirm-pswrd {
+    margin-bottom: 0px;
+}
+
 .pswrd-criteria {
     font-size: clamp(5.3px, 1.7vh, 8rem);
     position: relative;
