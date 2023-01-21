@@ -226,4 +226,5 @@ input:not(:placeholder-shown,:focus):invalid {
 .error {
     visibility: visible;
     color: red;
+    font-size: clamp(5.3px, 1.7vh, 8rem);
 }
