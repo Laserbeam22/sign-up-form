@@ -25,54 +25,42 @@
             <fieldset>
                 <h2>Let's do this!</h2>
                 <div>
-                    <label for="first-name">
-                       <span>FIRST NAME</span>
-                       <input type="text" id="first-name" autocomplete="off" minlength="1" maxlength="50" required placeholder="Thor">
+                    <label for="first-name">FIRST NAME<input type="text" id="first-name" autocomplete="off" minlength="1" maxlength="50" required placeholder="Thor">
                     </label>
                 </div>
                 <div class="last-name">
-                    <label for="last-name">
-                        <span>LAST NAME</span>
-                        <input type="text" id="last-name" autocomplete="off" minlength="1" maxlength="50" required placeholder="Odinson">
+                    <label for="last-name">LAST NAME<input type="text" id="last-name" autocomplete="off" minlength="1" maxlength="50" required placeholder="Odinson">
                     </label>
                 </div>
                 <div>
-                    <label for="email">
-                       <span>EMAIL</span>
-                       <input type="email" id="email" autocomplete="off" required placeholder="thor.odinson@example.com">
+                    <label for="email">EMAIL<input type="email" id="email" autocomplete="off" required placeholder="thor.odinson@example.com">
                     </label>
                 </div>
                 <div class="phone">
-                    <label for="phone">
-                       <span>PHONE NUMBER <em class="optional">(optional)</em></span>
-                       <input type="tel" id="phone" autocomplete="off" pattern="^[\d]{10}|(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" placeholder="555-555-5555">
+                    <label for="phone">PHONE NUMBER<span><em class="optional">(optional)</em></span><input type="tel" id="phone" autocomplete="off" pattern="^[\d]{10}|(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" placeholder="555-555-5555">
                     </label>
                 </div>
                 <div>
-                    <label for="password">
-                       <span>PASSWORD</span>
-                       <input type="password" id="password" required minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder=" ">
+                    <label for="password">PASSWORD<input type="password" id="password" required minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder=" ">
                     </label>
-                    <span class="pswrd-criteria">Password must contain:
+                    <div class="pswrd-criteria">Password must contain:
                         <ul>
                           <li id="rule-1" class="invalid">At least 1 <strong>Uppercase </strong> letter</li>
                           <li id="rule-2" class="invalid">At least 1 <strong>Lowercase </strong>letter</li>
                           <li id="rule-3" class="invalid">At least 1 <strong>Number</strong></li>
                           <li id="rule-4" class="invalid">A minimum of <strong>8 characters</strong></li>
                         </ul>
-                    </span>
+                    </div>
                 </div>
                 <div class="confirm-pswrd">
-                    <label for="confirm-pswrd">
-                       <span>CONFIRM PASSWORD</span>
-                       <input type="password" id="confirm-pswrd" class="confirmInvalid" required minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder=" ">
+                    <label for="confirm-pswrd">CONFIRM PASSWORD<input type="password" id="confirm-pswrd" class="confirmInvalid" required minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder=" ">
                     </label>
-                    <span>
+                    <div>
                         <p id="pswrdMatch" class="pswrdInvalid">Password Matches</p>
-                    </span>
-                    <span>
+                    </div>
+                    <div>
                         <p id="noMatch" class="no-error">Password does not match. Please try again.</p>
-                    </span>
+                    </div>
                 </div>
             </fieldset>
             <button type="submit" id="create">Create Account</button>
