@@ -117,10 +117,6 @@ input {
     font-size: clamp(.5em, 1.7vh, 8rem);
 }
 
-.last-name, .phone, .confirm-pswrd {
-    margin-left: -13vw;
-}
-
 #password, #confirm-pswrd {
     margin-bottom: 0px;
 }
