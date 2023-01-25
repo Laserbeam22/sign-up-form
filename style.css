@@ -128,11 +128,6 @@ input {
     margin-bottom: 0px;
 }
 
-.pswrd-criteria {
-    font-size: clamp(5.3px, 1.6vh, 8rem);
-    position: relative;
-}
-
 #right {
     height: 10px;
 }
@@ -192,6 +187,11 @@ input:not(:placeholder-shown,:focus):invalid {
 }
 
 /* PASSWORD CRITERIA STYLING */
+
+.pswrd-criteria {
+    font-size: clamp(5.3px, 1.6vh, 8rem);
+    position: relative;
+}
 
 .valid {
     color: green;
