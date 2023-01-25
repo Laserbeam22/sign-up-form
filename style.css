@@ -156,7 +156,8 @@ button:hover {
 .bottom {
     margin-left: 3vw;
     margin-top: 3%;
-    font-size: clamp(.5em, 2vh, 8rem);
+    font-size: clamp(.4vh, 1.9vh, 2rem);
+    letter-spacing: .002vw;
 }
 
 .log {
