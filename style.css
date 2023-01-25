@@ -97,6 +97,7 @@ label {
     font-size: 1.4vh;
     letter-spacing: .06vw;
     font-weight: 500;
+    display: block;
 }
 
 .optional {
