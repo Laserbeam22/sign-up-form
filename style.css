@@ -79,6 +79,7 @@ fieldset {
     padding-left: 3vw;
     padding-bottom: 2vh;
     box-shadow: rgba(121, 121, 121, 0.45) 0px 15px 15px -15px;
+    grid-column-gap: clamp(4%, 1vw, 1vh);
 }
 
 h2 {
