@@ -129,6 +129,10 @@ input {
     position: relative;
 }
 
+#right {
+    height: 10px;
+}
+
 button {
     padding: 1.1% 4%;
     margin-left: 3vw;
