@@ -120,6 +120,14 @@ input {
     border: solid 1px #E5E7EB;
 }
 
+input::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+}
+
+input::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+}
+
 ::placeholder {
     font-size: clamp(.5em, 1.7vh, 8rem);
 }
